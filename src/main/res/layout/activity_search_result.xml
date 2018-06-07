@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchResult">
+
+    <TextView
+        android:id="@+id/currentSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="163dp"
+        android:layout_marginStart="163dp"
+        android:layout_marginTop="16dp"
+        android:text="Search Result"
+        android:textColor="@android:color/holo_green_dark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/st"
+        android:layout_width="136dp"
+        android:layout_height="22dp"
+        android:layout_marginEnd="232dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="44dp"
+        android:text="Start Time ->"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/currentSearch" />
+
+    <TextView
+        android:id="@+id/Starttassign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="101dp"
+        android:layout_marginTop="79dp"
+        android:text="Start t"
+        app:layout_constraintStart_toEndOf="@+id/st"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/sd"
+        android:layout_width="132dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="35dp"
+        android:text="Start Date->"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/st" />
+
+    <TextView
+        android:id="@+id/Startdassign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="105dp"
+        android:layout_marginTop="38dp"
+        android:text="Start d"
+        app:layout_constraintStart_toEndOf="@+id/sd"
+        app:layout_constraintTop_toBottomOf="@+id/Starttassign" />
+
+    <TextView
+        android:id="@+id/seating"
+        android:layout_width="136dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="49dp"
+        android:text="Seats available"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sd" />
+
+    <TextView
+        android:id="@+id/seatnoassign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="101dp"
+        android:layout_marginTop="43dp"
+        android:text="0"
+        app:layout_constraintStart_toEndOf="@+id/seating"
+        app:layout_constraintTop_toBottomOf="@+id/Startdassign" />
+
+    <TextView
+        android:id="@+id/pricing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="60dp"
+        android:text="Price per seat"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seating" />
+
+    <TextView
+        android:id="@+id/priceassign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="151dp"
+        android:layout_marginTop="61dp"
+        android:text="0"
+        app:layout_constraintStart_toEndOf="@+id/pricing"
+        app:layout_constraintTop_toBottomOf="@+id/seatnoassign" />
+
+    <EditText
+        android:id="@+id/seatcnt"
+        android:layout_width="241dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="66dp"
+        android:layout_marginStart="77dp"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:hint="Number of seats you want"
+        android:inputType="number"
+        android:text="0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pricing" />
+
+    <Button
+        android:id="@+id/cancel"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="37dp"
+        android:background="#ed5c5c"
+        android:text="Cancel"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seatcnt" />
+
+    <Button
+        android:id="@+id/accept"
+        android:layout_width="177dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="37dp"
+        android:background="#74d1f3"
+        android:text="Continue"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintStart_toEndOf="@+id/cancel"
+        app:layout_constraintTop_toBottomOf="@+id/seatcnt" />
+</android.support.constraint.ConstraintLayout>
